@@ -1,7 +1,8 @@
 <?php
-  include("./sanitize.php");
-
   header('Access-Control-Allow-Origin: *'); 
+
+  include("./sanitize.php");
+  
   include("./connect_db.php");
 
   $residence = sanitize($_POST["residence"]);
